@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Page de contact du portfolio de Louis Lévêque.">
+        <meta name="author" content="Louis Lévêque">
+        <title>Contact | Louis Lévêque</title>
+        <link rel="icon" href="../favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/site.css" rel="stylesheet">
+        <link href="../css/pages.css" rel="stylesheet">
+        <script src="../js/pages.js"></script>
+        <script src="../js/contact.js"></script>
+    </head>
+    <body data-page="contact">
+        <div id="header"></div>
+
+        <main class="content-shell">
+            <div class="container">
+                <section class="page-hero surface-card">
+                    <span class="section-tag">Contact</span>
+                    <h1 class="section-title">Une zone de contact simple et directe.</h1>
+                    <p class="page-lead">
+                        Cette page permet de me contacter facilement dans le cadre d'un échange professionnel, d'une
+                        demande d'information ou d'une opportunité liée à mon parcours en BTS SIO.
+                    </p>
+                </section>
+
+                <section class="contact-grid-page">
+                    <article class="surface-card-soft contact-form-card">
+                        <span class="eyebrow">Formulaire de contact</span>
+                        <h2>Envoyer un message</h2>
+                        <p class="form-note">
+                            Le formulaire prépare automatiquement un email dans votre logiciel de messagerie.
+                        </p>
+
+                        <form id="contact-form" class="contact-form">
+                            <div class="field-row">
+                                <div class="field">
+                                    <label for="name">Nom</label>
+                                    <input id="name" name="name" type="text" required>
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email</label>
+                                    <input id="email" name="email" type="email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="subject">Sujet</label>
+                                <input id="subject" name="subject" type="text" required>
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-accent">
+                                <span class="fa fa-paper-plane"></span> Préparer l'email
+                            </button>
+                            <p id="contact-form-status" class="form-note"></p>
+                        </form>
+                    </article>
+
+                    <article class="surface-card-soft contact-details-card">
+                        <span class="eyebrow">Coordonnées</span>
+                        <h2>Me joindre directement</h2>
+                        <div class="contact-list">
+                            <div class="contact-line">
+                                <span class="fa fa-envelope"></span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="mailto:louis.leveque.nsi@gmail.com">louis.leveque.nsi@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-line">
+                                <span class="fa fa-phone"></span>
+                                <div>
+                                    <strong>Téléphone</strong>
+                                    <a href="tel:+33782722693">+33 7 82 72 26 93</a>
+                                </div>
+                            </div>
+                            <div class="contact-line">
+                                <span class="fa fa-map-marker"></span>
+                                <div>
+                                    <strong>Localisation</strong>
+                                    <span>Mareil-sur-Mauldre, Yvelines</span>
+                                </div>
+                            </div>
+                            <div class="contact-line">
+                                <span class="fa fa-file-pdf-o"></span>
+                                <div>
+                                    <strong>CV PDF</strong>
+                                    <a href="../docs/CV-Louis-Leveque-Stage.pdf" target="_blank">Télécharger mon CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="contact-note">
+                            Les liens LinkedIn et GitHub pourront être ajoutés dans cette zone dès que les URLs seront disponibles.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </main>
+
+        <div id="footer"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>

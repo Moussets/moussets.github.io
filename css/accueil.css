@@ -1,6 +1,268 @@
-#maPhoto {
-    margin-right: 10px;
+.hero-shell {
+    padding: 32px 0 18px;
 }
-.jumbotron {    
-    padding-bottom: 32px;
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.9fr);
+    gap: 2rem;
+    align-items: stretch;
+    padding: 2.3rem;
+}
+
+.hero-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-lead {
+    max-width: 720px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin: 1.7rem 0;
+}
+
+.hero-meta {
+    margin-top: 0.35rem;
+}
+
+.portrait-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at top, rgba(83, 167, 255, 0.16), transparent 42%),
+        rgba(255, 255, 255, 0.03);
+}
+
+.portrait-frame {
+    overflow: hidden;
+    border-radius: 22px;
+    aspect-ratio: 4 / 5;
+    background: #0f1a2e;
+}
+
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portrait-caption {
+    margin-top: 1.2rem;
+}
+
+.portrait-role {
+    margin-bottom: 0.45rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.portrait-note {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.profile-title {
+    max-width: 920px;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.3rem;
+    margin-top: 2.2rem;
+}
+
+.focus-card,
+.profile-panel,
+.project-card,
+.contact-card {
+    padding: 1.5rem;
+}
+
+.focus-card h3,
+.profile-panel h3,
+.project-card h3 {
+    margin: 1rem 0 0.75rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.2rem;
+}
+
+.focus-card p,
+.profile-panel p,
+.project-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.section-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.section-link:hover {
+    color: #7ebfff;
+    text-decoration: none;
+}
+
+.focus-icon,
+.project-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(83, 167, 255, 0.18), rgba(125, 130, 255, 0.2));
+    color: var(--accent);
+    font-size: 1.4rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.3rem;
+    margin-top: 1.3rem;
+}
+
+.timeline-snippet {
+    display: grid;
+    gap: 1rem;
+}
+
+.timeline-step {
+    padding-left: 1rem;
+    border-left: 2px solid rgba(83, 167, 255, 0.34);
+}
+
+.timeline-year {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.timeline-step p {
+    margin: 0.35rem 0 0;
+}
+
+.section-alt {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.3rem;
+    margin-top: 2.2rem;
+}
+
+.project-card .chip {
+    margin-top: 1rem;
+    margin-right: 0.55rem;
+}
+
+.projects-cta {
+    margin-top: 1.6rem;
+}
+
+.contact-shell {
+    padding: 2.2rem;
+}
+
+.contact-title {
+    max-width: 760px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.contact-actions {
+    margin-top: 1.5rem;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    min-height: 180px;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-strong);
+    text-decoration: none;
+}
+
+.contact-card span.fa {
+    color: var(--accent);
+    font-size: 1.35rem;
+}
+
+.contact-card strong {
+    margin-top: 0.5rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.05rem;
+}
+
+.contact-card span:last-child {
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+@media (max-width: 991.98px) {
+    .hero-layout,
+    .profile-grid,
+    .projects-grid,
+    .contact-grid,
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portrait-card {
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-layout,
+    .contact-shell {
+        padding: 1.4rem;
+    }
+
+    .hero-shell {
+        padding-top: 18px;
+    }
+
+    .hero-lead {
+        font-size: 1rem;
+    }
+
+    .contact-card {
+        min-height: auto;
+    }
 }

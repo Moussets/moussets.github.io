@@ -1,143 +1,257 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
     <head>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Portfolio de Louis Leveque - BTS SIO SISR">
-        <meta name="author" content="Louis Leveque">    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <title>Portfolio de Louis Leveque</title>
+        <meta name="description" content="Portfolio de Louis Lévêque, étudiant en BTS SIO option SISR, orienté systèmes, réseaux, support et cybersécurité.">
+        <meta name="author" content="Louis Lévêque">
+        <title>Portfolio de Louis Lévêque</title>
         <link rel="icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/site.css" rel="stylesheet">
         <link href="css/accueil.css" rel="stylesheet">
+        <script src="js/index.js"></script>
     </head>
-    <body>
-        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
-            <div class="container">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" 
-                        data-target="#navbar" aria-controls="navbar">
-                    <span class="sr-only">Navigation raccourcie</span>☰
-                </button>
-                <a class="navbar-brand" href="#">Mon portfolio</a>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active nav-item">
-                            <a href="index.html" class="nav-link">
-                                <span class="fa fa-home"></span> Accueil
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="cv.html" class="nav-link">
-                                <span class="fa fa-id-badge"></span> CV
-                            </a>
-                        </li>
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link"
-                               data-toggle="dropdown" role="button">
-                                <span class="fa fa-list-alt"></span> Réalisations <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li role="presentation" class="dropdown-header dropdown-item"> En autonomie</li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Application Android</a>
-                                </li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Site web</a>
-                                </li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Études et analyses</a>
-                                </li>
-                                <li role="presentation" class="dropdown-divider"></li>
-                                <li role="presentation" class="dropdown-header dropdown-item"> En entreprise</li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Projet de 1ère année</a>
-                                </li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Projet de 2ème année</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link"
-                               data-toggle="dropdown" role="button">
-                                <span class="fa fa-graduation-cap"></span> Jury E6 BTS SIO
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="dropdown-header dropdown-item" role="presentation">
-                                    Documents communs</li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Contexte</a></li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Cahier des charges</a></li>
-                                <li role="presentation" class="dropdown-divider"></li>
-                                <li role="presentation" class="dropdown-header dropdown-item">Ateliers</li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Atelier n°1</a></li>
-                                <li role="presentation" class="dropdown-item">
-                                    <a role="menuitem" href="#">Atelier n°2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><span class="fa fa-envelope"></span> Me contacter
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="jumbotron"> <!-- Emplacement pour le contenu principal de la page -->
-            <div class="container">
-                <h1>Bonjour et bienvenu sur mon portfolio !</h1>
-                <p>
-                    <img id="maPhoto" class="float-left rounded" src="images/AmeliaPilou.jpg"
-                         alt="Ma photo d'identité">Je m'appelle Amélia Pilou, j'ai 21 ans et ce site a pour
-                    vocation de me présenter en tant que personne, en tant qu'étudiante
-                    et candidate à l'obtention du BTS SIO (Services Informatiques
-                    aux Organisations) et en tant que future professionnelle de l'informatique.
-                </p>
-                <p><a class="btn btn-primary btn-lg" href="pages/cv.html" role="button">En savoir plus »</a></p>
-            </div>
-        </div>
+    <body data-page="home">
+        <div id="header"></div>
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h2>Étudiante du CNED</h2>
-                        <p>J'ai choisi de suivre le BTS SIO à distance par le Centre National d'Enseignement à Distance car je souhaitais pourvoir avancer à mon rythme, choisir moi-même mon emploi du temps, apprendre à être autonome, pouvoir utiliser les outils de collaboration à distance et devenir plus responsable en étant capable de me fixer moi-même des contraintes, des limites et des objectifs à atteindre !
-                        </p>
-                        <p><a class="btn btn-secondary" href="http://www.cned.fr" target="_blank" role="button">En savoir plus »</a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h2>Le BTS SIO</h2>
-                        <p>Passionnée d'informatique depuis mon plus jeune âge, j'aime apprendre à faire de nouvelles choses avec mon ordinateur, mon smartphone ou ma tablette. Une Geek ? Oui assurément ! Mais j'aimerais maintenant passer au niveau au-dessus et devenir une vraie Nerd, dans le bon sens du terme ! Après mon bac, le BTS SIO s'est présenté comme une évidence. Avec 60% d'Informatique "pure", 13% d'Économie, management et droit de l'informatique, 9% d'Anglais, 9% de culture générale et 9% de Maths, je savais que cette formation allait me mettre le pied à l'étrier pour poursuivre ensuite dans cette voie et devenir informaticienne !
-                        </p>
-                        <p><a class="btn btn-secondary" href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_supérieur_-_Services_informatiques_aux_organisations" target="_blank" role="button">En savoir plus »</a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h2>Option B SLAM</h2>
-                        <p>En fin de premier semestre, on doit choisir notre option. "Solutions Logicielles et Applications Métiers" est l'option qui m'a séduit&nbsp;! Travailler en équipe à la satisfaction de besoins d'un client, définir des spécifications, faire des tests, corriger des bugs, faire de la maintenance, veiller à la sécurité des données à caractère personnel... tout en apprenant les bases du métier de développeuse : modélisation des données
-                            avec Merise et UML, programmation objet avec Java, C# et PHP, conception de bases de données sous PostgreSQL et MySQL, réalisation de
-                            composants logiciels avec Symfony, gestion de projet, méthodes agiles... J'étais sûre que ça serait fait pour moi !
-                        </p>
-                        <p><a class="btn btn-secondary" href="https://www.onisep.fr/recherche?text=+SIO+SLAM+BTS+services+informatiques+aux+organisations+option+B+solutions+logicielles+et+applications+m%C3%A9tiers&context=onisep" target="_blank" role="button">En savoir plus »</a>
-                        </p>
+        <main>
+            <section class="hero-shell">
+                <div class="container">
+                    <div class="hero-layout surface-card">
+                        <div class="hero-copy">
+                            <span class="section-tag">Portfolio BTS SIO SISR</span>
+                            <p class="eyebrow">Louis Lévêque</p>
+                            <h1 class="section-title">Systèmes, réseaux et support avec une approche concrète du terrain.</h1>
+                            <p class="hero-lead">
+                                Je suis étudiant en première année de BTS SIO, option SISR, au CNED. Je m'intéresse
+                                principalement à l'administration système, aux réseaux, au support utilisateur et à la
+                                cybersécurité, avec une base complémentaire en développement web acquise lors de mon
+                                parcours précédent.
+                            </p>
+                            <div class="hero-actions">
+                                <a class="btn-accent" href="pages/cv.html">
+                                    <span class="fa fa-id-badge"></span> Voir mon CV
+                                </a>
+                                <a class="btn-outline-light" href="docs/CV-Louis-Leveque-Stage.pdf" target="_blank">
+                                    <span class="fa fa-download"></span> Télécharger le CV PDF
+                                </a>
+                            </div>
+                            <div class="meta-list hero-meta">
+                                <div class="meta-pill"><span class="fa fa-map-marker"></span> Mareil-sur-Mauldre, Yvelines</div>
+                                <div class="meta-pill"><span class="fa fa-graduation-cap"></span> BTS SIO SISR 2025-2026</div>
+                                <div class="meta-pill"><span class="fa fa-briefcase"></span> Ouvert à un stage en informatique</div>
+                            </div>
+                        </div>
+
+                        <aside class="portrait-card">
+                            <div class="portrait-frame">
+                                <img src="Images/photo-cv.jpg" alt="Portrait de Louis Lévêque">
+                            </div>
+                            <div class="portrait-caption">
+                                <p class="portrait-role">Technicien systèmes et réseaux junior</p>
+                                <p class="portrait-note">
+                                    Un portfolio pour présenter mon parcours, mes projets et les compétences que je construis en BTS SIO.
+                                </p>
+                            </div>
+                        </aside>
                     </div>
                 </div>
-                <hr>
-                <p class="text-center" id="copyright">© Amélia Pilou 2025</p>
-            </div>
-        </footer>
-        <!-- Optional JavaScript; choose one of the two! -->
+            </section>
 
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+            <section class="section-shell" id="profil">
+                <div class="container">
+                    <span class="section-tag">Profil</span>
+                    <h2 class="section-title profile-title">Une progression orientée infrastructure, réseau et accompagnement utilisateur.</h2>
+                    <p class="section-intro">
+                        J'aime comprendre comment les outils fonctionnent réellement, configurer des environnements
+                        techniques, résoudre des incidents de façon méthodique et faire le lien entre technique et usage.
+                        Mon objectif avec ce portfolio est de montrer cette évolution de manière claire et professionnelle.
+                    </p>
+
+                    <div class="focus-grid">
+                        <article class="surface-card-soft focus-card">
+                            <div class="focus-icon"><span class="fa fa-server"></span></div>
+                            <h3>Systèmes et virtualisation</h3>
+                            <p>Environnements Windows, Debian et Ubuntu, machines virtuelles sous VirtualBox, premiers pas sur Windows Server et Active Directory.</p>
+                        </article>
+                        <article class="surface-card-soft focus-card">
+                            <div class="focus-icon"><span class="fa fa-sitemap"></span></div>
+                            <h3>Réseaux et support</h3>
+                            <p>Notions de DNS, DHCP, adressage IP, réseau local, résolution de problèmes simples et outils de gestion de parc comme GLPI et OCS Inventory.</p>
+                        </article>
+                        <article class="surface-card-soft focus-card">
+                            <div class="focus-icon"><span class="fa fa-code"></span></div>
+                            <h3>Culture projet</h3>
+                            <p>Une base en développement web et applicatif grâce au Wagon et à mes projets personnels, utile pour comprendre les besoins techniques de bout en bout.</p>
+                        </article>
+                    </div>
+
+                    <div class="profile-grid">
+                        <article class="surface-card-soft profile-panel">
+                            <p class="eyebrow">À propos</p>
+                            <h3>Ce que je recherche</h3>
+                            <p>
+                                Je souhaite présenter mes travaux, mes compétences et mon évolution en BTS SIO à travers
+                                un portfolio en ligne sérieux, lisible et cohérent avec mon orientation SISR.
+                            </p>
+                            <p>
+                                Je vise des environnements où je peux contribuer sur des sujets systèmes, réseaux,
+                                support informatique et sécurité, tout en continuant à renforcer mes bases techniques.
+                            </p>
+                        </article>
+
+                        <article class="surface-card-soft profile-panel">
+                            <p class="eyebrow">Parcours</p>
+                            <h3>Repères rapides</h3>
+                            <div class="timeline-snippet">
+                                <div class="timeline-step">
+                                    <span class="timeline-year">2025 - 2026</span>
+                                    <p>BTS SIO option SISR au CNED.</p>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="timeline-year">2023</span>
+                                    <p>Bootcamp Développeur Web Full-Stack au Wagon.</p>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="timeline-year">2021 - 2023</span>
+                                    <p>Université de Lorraine, licence Histoire de l'Art et Archéologie.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-shell section-alt" id="orientation">
+                <div class="container">
+                    <span class="section-tag">Orientation</span>
+                    <h2 class="section-title">Un portfolio pensé pour répondre aux attendus du BTS SIO.</h2>
+                    <p class="section-intro">
+                        Le site présente mon parcours, mes objectifs professionnels, les compétences que je développe
+                        en première année, mes réalisations actuelles et la veille informationnelle que je mets en place.
+                    </p>
+
+                    <div class="focus-grid">
+                        <article class="surface-card-soft focus-card">
+                            <div class="focus-icon"><span class="fa fa-briefcase"></span></div>
+                            <h3>Métiers visés</h3>
+                            <p>Présentation des métiers qui m'intéressent dans les domaines support, systèmes et réseaux, avec une carte heuristique dédiée.</p>
+                            <a class="section-link" href="pages/metiers.html">Découvrir les métiers</a>
+                        </article>
+                        <article class="surface-card-soft focus-card">
+                            <div class="focus-icon"><span class="fa fa-wrench"></span></div>
+                            <h3>Compétences de 1re année</h3>
+                            <p>Résumé des compétences travaillées en BTS SIO SISR : parc, support, réseau, systèmes, services et sécurité.</p>
+                            <a class="section-link" href="pages/competences.html">Voir les compétences</a>
+                        </article>
+                        <article class="surface-card-soft focus-card">
+                            <div class="focus-icon"><span class="fa fa-rss"></span></div>
+                            <h3>Veille informationnelle</h3>
+                            <p>Organisation de ma veille, sources suivies et thèmes retenus autour de la cybersécurité et de l'administration système.</p>
+                            <a class="section-link" href="pages/veille.html">Consulter la veille</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-shell section-alt" id="projets">
+                <div class="container">
+                    <span class="section-tag">Projets</span>
+                    <h2 class="section-title">Quelques réalisations pour illustrer mon évolution technique.</h2>
+                    <p class="section-intro">
+                        Mes projets me servent à consolider mes compétences, tester des outils variés et construire un profil
+                        polyvalent entre infrastructure, support et développement.
+                    </p>
+
+                    <div class="projects-grid">
+                        <article class="surface-card-soft project-card">
+                            <div class="project-icon"><span class="fa fa-search"></span></div>
+                            <h3>Scan de pictogrammes</h3>
+                            <p>Projet de détection visuelle autour de Python, OpenCV et OCR pour répondre à un besoin concret d'identification de pictogrammes.</p>
+                            <span class="chip">Python</span>
+                            <span class="chip">OpenCV</span>
+                            <span class="chip">OCR</span>
+                        </article>
+
+                        <article class="surface-card-soft project-card">
+                            <div class="project-icon"><span class="fa fa-mobile"></span></div>
+                            <h3>Widget météo Android</h3>
+                            <p>Conception d'une interface Android, affichage de données météo et logique d'intégration en widget sur Android Studio.</p>
+                            <span class="chip">Android Studio</span>
+                            <span class="chip">API météo</span>
+                            <span class="chip">JSON</span>
+                        </article>
+
+                        <article class="surface-card-soft project-card">
+                            <div class="project-icon"><span class="fa fa-cutlery"></span></div>
+                            <h3>Site web sur la nutrition</h3>
+                            <p>Développement d'un site en Ruby on Rails avec front-end, back-end et gestion des données autour d'un sujet métier.</p>
+                            <span class="chip">Ruby on Rails</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">SQL</span>
+                        </article>
+                    </div>
+
+                    <div class="projects-cta">
+                        <a class="btn-surface" href="pages/projets.html">
+                            <span class="fa fa-folder-open"></span> Voir le détail des projets
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-shell" id="contact">
+                <div class="container">
+                    <div class="contact-shell surface-card">
+                        <div class="contact-copy">
+                            <span class="section-tag">Contact</span>
+                            <h2 class="section-title contact-title">Discuter d'un stage, d'un projet ou d'une opportunité en informatique.</h2>
+                            <p class="section-intro">
+                                Je privilégie un portfolio public simple et professionnel. Mon adresse complète reste
+                                réservée au CV PDF, mais vous pouvez me contacter directement par email ou téléphone.
+                            </p>
+                        </div>
+
+                        <div class="contact-grid">
+                            <a class="surface-card-soft contact-card" href="mailto:louis.leveque.nsi@gmail.com?subject=Contact%20depuis%20le%20portfolio">
+                                <span class="fa fa-envelope"></span>
+                                <strong>Email</strong>
+                                <span>louis.leveque.nsi@gmail.com</span>
+                            </a>
+                            <a class="surface-card-soft contact-card" href="tel:+33782722693">
+                                <span class="fa fa-phone"></span>
+                                <strong>Téléphone</strong>
+                                <span>+33 7 82 72 26 93</span>
+                            </a>
+                            <div class="surface-card-soft contact-card">
+                                <span class="fa fa-map-marker"></span>
+                                <strong>Localisation</strong>
+                                <span>Mareil-sur-Mauldre, Yvelines</span>
+                            </div>
+                            <a class="surface-card-soft contact-card" href="docs/CV-Louis-Leveque-Stage.pdf" target="_blank">
+                                <span class="fa fa-file-pdf-o"></span>
+                                <strong>CV PDF</strong>
+                                <span>Téléchargement direct</span>
+                            </a>
+                        </div>
+                        <div class="contact-actions">
+                            <a class="btn-accent" href="pages/contact.html">
+                                <span class="fa fa-paper-plane"></span> Ouvrir le formulaire de contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer"></div>
+
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
     </body>
 </html>

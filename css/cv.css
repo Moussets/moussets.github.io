@@ -1,0 +1,268 @@
+body {
+    color: var(--text);
+}
+
+.cv-shell {
+    padding: 30px 0 70px;
+}
+
+.cv-hero {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cv-portrait {
+    overflow: hidden;
+    border-radius: 24px;
+    background: #111c2f;
+    aspect-ratio: 4 / 5;
+}
+
+.cv-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cv-copy h1 {
+    margin: 0.55rem 0 0.5rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3.3rem);
+    letter-spacing: -0.04em;
+}
+
+.cv-subtitle {
+    margin: 0 0 1rem;
+    color: var(--accent);
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.cv-summary {
+    max-width: 760px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.02rem;
+    line-height: 1.85;
+}
+
+.cv-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin: 1.6rem 0;
+}
+
+.cv-contact-grid,
+.cv-grid,
+.skills-grid,
+.extras-grid {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.cv-contact-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 1.5rem;
+}
+
+.contact-panel,
+.cv-panel,
+.skill-panel,
+.extra-panel,
+.experience-card {
+    padding: 1.45rem;
+}
+
+.contact-panel {
+    min-height: 150px;
+}
+
+.contact-panel span.fa {
+    color: var(--accent);
+    font-size: 1.25rem;
+}
+
+.contact-label {
+    display: block;
+    margin-top: 0.8rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1rem;
+}
+
+.contact-value {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.cv-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    margin-bottom: 1.5rem;
+}
+
+.panel-heading {
+    margin: 0 0 1rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.3rem;
+}
+
+.cv-panel p,
+.extra-panel p {
+    margin-bottom: 0.85rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.qualities-list,
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.qualities-list .chip,
+.interests-list .chip {
+    background: rgba(83, 167, 255, 0.1);
+}
+
+.timeline-list,
+.experience-stack {
+    display: grid;
+    gap: 1.1rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1.2rem 1.2rem 1.2rem 1.4rem;
+    border-left: 3px solid rgba(83, 167, 255, 0.35);
+}
+
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+    color: var(--accent);
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.timeline-item h3,
+.experience-card h3,
+.skill-panel h3,
+.extra-panel h3 {
+    margin: 0 0 0.45rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.15rem;
+}
+
+.timeline-item p,
+.experience-card p,
+.skill-panel p,
+.extra-panel p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.72;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 1.3rem;
+}
+
+.experience-meta {
+    color: var(--muted);
+}
+
+.experience-place {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.experience-date {
+    font-size: 0.94rem;
+}
+
+.skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 1.5rem 0;
+}
+
+.skill-panel p {
+    margin-bottom: 1rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+.skill-tags span,
+.lang-level {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.42rem 0.76rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    font-size: 0.92rem;
+}
+
+.extras-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 1rem;
+}
+
+.extra-panel .eyebrow {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+}
+
+@media (max-width: 1199.98px) {
+    .cv-contact-grid,
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 991.98px) {
+    .cv-hero,
+    .cv-grid,
+    .extras-grid,
+    .experience-card {
+        grid-template-columns: 1fr;
+    }
+
+    .cv-portrait {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .cv-shell {
+        padding-top: 18px;
+    }
+
+    .cv-hero,
+    .contact-panel,
+    .cv-panel,
+    .skill-panel,
+    .extra-panel,
+    .experience-card {
+        padding: 1.2rem;
+    }
+
+    .cv-contact-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}

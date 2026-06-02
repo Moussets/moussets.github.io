@@ -1,0 +1,159 @@
+.projects-shell {
+    padding: 30px 0 70px;
+}
+
+.projects-hero,
+.projects-note {
+    padding: 2rem;
+}
+
+.projects-hero {
+    margin-bottom: 1.5rem;
+}
+
+.projects-lead {
+    max-width: 850px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.projects-grid-page {
+    display: grid;
+    gap: 1.3rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-detail-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.project-detail-card h2 {
+    margin: 1rem 0 0.7rem;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.25rem;
+}
+
+.project-detail-card p {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.project-badges,
+.project-points,
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.project-points {
+    flex-direction: column;
+}
+
+.project-point {
+    padding: 0.8rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--muted);
+}
+
+.project-gallery {
+    margin-top: auto;
+}
+
+.project-gallery figure {
+    flex: 1 1 100%;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-gallery figcaption {
+    padding: 0.85rem 1rem 1rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.project-icon-large {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(83, 167, 255, 0.18), rgba(125, 130, 255, 0.22));
+    color: var(--accent);
+    font-size: 1.55rem;
+}
+
+.projects-note {
+    margin-top: 1.5rem;
+}
+
+.projects-note p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.project-placeholders {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.6rem;
+}
+
+.placeholder-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.placeholder-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-strong);
+    text-decoration: none;
+}
+
+.placeholder-title {
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+@media (max-width: 991.98px) {
+    .projects-grid-page,
+    .project-placeholders {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .projects-shell {
+        padding-top: 18px;
+    }
+
+    .projects-hero,
+    .projects-note,
+    .project-detail-card {
+        padding: 1.25rem;
+    }
+}
